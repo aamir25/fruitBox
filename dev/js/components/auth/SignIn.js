@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { ModalContainer, ModalDialog } from 'react-modal-dialog';
+import Loader from 'react-loader-spinner'
 
 import { signIn } from '../../actions/signInActions';
 
@@ -47,7 +48,16 @@ class SignIn extends Component {
 			            <p id="mobileNoError"></p>
 			            <input className="form-control" type="password" required placeholder="Password" id="password" />
 			            <p id="passwordError"></p>
-			            <input className="btn btn-primary" type="submit" value="Log-In" />
+			            {
+			          		!this.props.logIn.isLoading ?
+			          		<input className="btn btn-primary" type="submit" value="Log-In" /> :
+				        	<Loader
+					        	type="Puff"
+					        	color="#1784fb"
+					        	height="50"
+					        	width="50"
+					    	/>
+			            }
 			        </form>
 			    </div>
 			</div>

@@ -62,7 +62,7 @@ class ExploreTheImpossibility extends Component {
 		                                        <span className="glyphicon glyphicon-minus"></span>
 		                                    </button>
 		                                </span>
-		                                <input type="text" id={"quantity" + product.id} value="1" name="quantity" className="form-control input-number" min="1" />
+		                                <input type="text" id={"quantity" + product.id} defaultValue="1" name="quantity" className="form-control input-number" min="1" />
 		                                <span className="input-group-btn">
 		                                    <button onClick={ () => { this.incrementQuantity(product.id) } } type="button" className="quantity-right-plus btn btn-default btn-number btn-sm" data-type="plus" data-field="">
 		                                        <span className="glyphicon glyphicon-plus"></span>

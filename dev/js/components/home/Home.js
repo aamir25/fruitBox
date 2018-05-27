@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 // Sub Components
 import Intro from './Intro';
 import StoreDescription from '../common/StoreDescription';
+import ExploreTheImpossibility from '../common/ExploreTheImpossibility';
 import Creations from './Creations';
-import Extra from './Extra';
 import WhyChooseUs from './WhyChooseUs';
 import PricingPlan from './PricingPlan';
 
@@ -15,9 +15,9 @@ export default class Home extends Component {
 				<Intro />
 				<StoreDescription />
 				<Creations />
-				<Extra />
 				<WhyChooseUs />
 				<PricingPlan />
+				<ExploreTheImpossibility />
 			</div>
 		);
 	}

@@ -29,10 +29,10 @@ ReactDOM.render((
 							<IndexRoute component={Home} />
 							<Route path="/fruits" component={Fruits} />
 							<Route path="/cakes" component={Cakes} />
+							<Route path="/signUp" component={SignUp} />
+							<Route path="/signIn" component={SignIn} />
+							<Route path="/cart" component={Cart} />
 						</Route>
-						<Route path="/signUp" component={SignUp} />
-						<Route path="/signIn" component={SignIn} />
-						<Route path="/cart" component={Cart} />
 					</Router>
 				</Provider>
 				), document.getElementById('fh5co-page'))
